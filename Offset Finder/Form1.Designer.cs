@@ -29,6 +29,7 @@ namespace Offset_Finder
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.off_0 = new System.Windows.Forms.TextBox();
             this.off_res = new System.Windows.Forms.TextBox();
@@ -61,7 +62,7 @@ namespace Offset_Finder
             // 
             // off_res
             // 
-            this.off_res.Location = new System.Drawing.Point(13, 103);
+            this.off_res.Location = new System.Drawing.Point(13, 94);
             this.off_res.Name = "off_res";
             this.off_res.ReadOnly = true;
             this.off_res.Size = new System.Drawing.Size(120, 20);
@@ -80,7 +81,7 @@ namespace Offset_Finder
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 87);
+            this.label2.Location = new System.Drawing.Point(53, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 2;
@@ -116,7 +117,7 @@ namespace Offset_Finder
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 126);
+            this.label3.Location = new System.Drawing.Point(13, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 26);
             this.label3.TabIndex = 2;
@@ -128,7 +129,7 @@ namespace Offset_Finder
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(150, 160);
+            this.ClientSize = new System.Drawing.Size(150, 152);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -138,10 +139,10 @@ namespace Offset_Finder
             this.Controls.Add(this.off_1);
             this.Controls.Add(this.off_0);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Offset Converter";
             this.ResumeLayout(false);

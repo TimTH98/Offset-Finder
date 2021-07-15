@@ -19,4 +19,5 @@ namespace Offset_Finder
             Application.Run(new Form1());
         }
     }
+    
 }

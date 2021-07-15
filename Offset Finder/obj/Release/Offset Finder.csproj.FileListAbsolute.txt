@@ -1,0 +1,10 @@
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\bin\Release\Offset Finder.exe.config
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\bin\Release\Offset Finder.exe
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\bin\Release\Offset Finder.pdb
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset Finder.csproj.AssemblyReference.cache
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset_Finder.Form1.resources
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset_Finder.Properties.Resources.resources
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset Finder.csproj.GenerateResource.cache
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset Finder.csproj.CoreCompileInputs.cache
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset Finder.exe
+C:\Users\timhe\Documents\GitHub\Offset Finder\Offset Finder\obj\Release\Offset Finder.pdb
