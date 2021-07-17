@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Offset_Finder
 {
@@ -9,7 +10,7 @@ namespace Offset_Finder
         #region Convert Func
         private static string ConvertOffset(string offset)
         {
-            int offsetHex = int.Parse(offset, System.Globalization.NumberStyles.HexNumber);
+            int offsetHex = int.Parse(offset, NumberStyles.HexNumber);
 
             offsetHex += 0x400000;
             string result = string.Format($"{offsetHex:X8}");
@@ -28,12 +29,36 @@ namespace Offset_Finder
 
             return resultLE.ToString();
         }
+        #endregion
+        
+        #region Find original offset
+        private static string ConvertToOffset(string value)
+        {
+            int offset = int.Parse(ConvertBigEndian(value), NumberStyles.HexNumber) - 0x400000;
+            return string.Format($"{offset:X8}");
+        }
+
+        private static string ConvertBigEndian(string value)
+        {
+            var groups = new List<string>();
+            for (int i = 0; i < value.Length; i += 2)
+            {
+                string item = new string(new char[] { value[i], value[i + 1] });
+                groups.Add(item);
+            }
+
+            groups.Reverse();
+            string valueBigEndian = "";
+            foreach (var item in groups)
+                valueBigEndian += item;
+            return valueBigEndian;
+        }
+        #endregion
+        
         public Form1()
         {
             InitializeComponent();
-            var ran = 123;
         }
-        #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -41,6 +66,11 @@ namespace Offset_Finder
                             off_2.Text + off_3.Text;
 
             off_res.Text = ConvertOffset(offset);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            result2.Text = ConvertToOffset(CodeLine.Text);
         }
     }
 }
